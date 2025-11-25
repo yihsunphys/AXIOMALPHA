@@ -55,6 +55,40 @@ Open in browser: http://localhost:8501
 
 ---
 
+### Frontend (Next.js + TailwindCSS)
+
+The frontend is built with:
+
+- **Next.js 14**
+- **React**
+- **TailwindCSS**
+- **Axios** (for calling backend API)
+
+### Install & Run
+
+```bash
+cd frontend
+npm install
+npm run dev
+Open the app at:
+http://localhost:3000
+```
+
+Folder Structure
+```
+src/
+ ├── app/
+ │    ├── page.tsx            # Home
+ │    ├── search/page.tsx     # Search UI
+ │    └── paper/[id]/page.tsx # Paper detail
+ ├── lib/api.ts               # Axios API client
+ ├── components/              # UI components
+ └── types/                   # TypeScript types
+```
+
+---
+
+
 ### 🔹 Notes
 
 - Make sure the **backend is running** before using the Streamlit UI.
